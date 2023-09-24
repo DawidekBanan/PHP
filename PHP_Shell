@@ -8,3 +8,4 @@ error_reporting(0);
 ob_start();
 define('myaddress',$_SERVER['SCRIPT_FILENAME']);
 define('postpass',$password);
+define('shellname',$shellname);
