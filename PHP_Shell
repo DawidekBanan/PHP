@@ -9,3 +9,4 @@ ob_start();
 define('myaddress',$_SERVER['SCRIPT_FILENAME']);
 define('postpass',$password);
 define('shellname',$shellname);
+define('myurl',$myurl);
