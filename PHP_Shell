@@ -20,3 +20,4 @@ hmlogin(2);
 exit;}
 if($_COOKIE['postpass'] != md5(postpass)){
 	if($_POST['postpass']){
+		if($_POST['postpass'] == postpass){
