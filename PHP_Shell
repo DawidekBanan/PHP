@@ -21,3 +21,4 @@ exit;}
 if($_COOKIE['postpass'] != md5(postpass)){
 	if($_POST['postpass']){
 		if($_POST['postpass'] == postpass){
+			setcookie('postpass',md5($_POST['postpass']));
