@@ -33,3 +33,4 @@ if($_COOKIE['postpass'] != md5(postpass)){
 
 if(isset($_GET['down'])) do_down($_GET['down']);
 if(isset($_GET['pack'])){
+	$dir = do_show($_GET['pack']);
