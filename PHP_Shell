@@ -35,3 +35,4 @@ if(isset($_GET['down'])) do_down($_GET['down']);
 if(isset($_GET['pack'])){
 	$dir = do_show($_GET['pack']);
 	$zip = new eanver($dir);
+	$out = $zip->out;
