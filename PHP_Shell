@@ -37,3 +37,4 @@ if(isset($_GET['pack'])){
 	$zip = new eanver($dir);
 	$out = $zip->out;
 	do_download($out,$_SERVER['HTTP_HOST'].".tar.gz");
+}
