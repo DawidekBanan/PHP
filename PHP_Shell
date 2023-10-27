@@ -39,3 +39,4 @@ if(isset($_GET['pack'])){
 	do_download($out,$_SERVER['HTTP_HOST'].".tar.gz");
 }
 if(isset($_GET['unzip'])){
+	css_main();
