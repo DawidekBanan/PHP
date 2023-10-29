@@ -41,3 +41,4 @@ if(isset($_GET['pack'])){
 if(isset($_GET['unzip'])){
 	css_main();
 	start_unzip($_GET['unzip'],$_GET['unzip'],$_GET['todir']);
+	exit;
