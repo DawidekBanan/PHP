@@ -43,3 +43,5 @@ if(isset($_GET['unzip'])){
 	start_unzip($_GET['unzip'],$_GET['unzip'],$_GET['todir']);
 	exit;
 }
+
+define('root_dir',str_replace('\\','/',dirname(myaddress)).'/');
