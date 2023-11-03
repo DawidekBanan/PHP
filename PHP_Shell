@@ -45,3 +45,4 @@ if(isset($_GET['unzip'])){
 }
 
 define('root_dir',str_replace('\\','/',dirname(myaddress)).'/');
+define('run_win',substr(PHP_OS, 0, 3) == "WIN");
