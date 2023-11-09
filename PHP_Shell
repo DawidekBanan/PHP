@@ -51,3 +51,4 @@ $eanver = isset($_GET['eanver']) ? $_GET['eanver'] : "";
 $doing = isset($_POST['doing']) ? $_POST['doing'] : "";
 $path = isset($_GET['path']) ? $_GET['path'] : root_dir;
 $name = isset($_POST['name']) ? $_POST['name'] : "";
+$img = isset($_GET['img']) ? $_GET['img'] : "";
