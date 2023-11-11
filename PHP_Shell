@@ -53,3 +53,4 @@ $path = isset($_GET['path']) ? $_GET['path'] : root_dir;
 $name = isset($_POST['name']) ? $_POST['name'] : "";
 $img = isset($_GET['img']) ? $_GET['img'] : "";
 $p = isset($_GET['p']) ? $_GET['p'] : "";
+$pp = urlencode(dirname($p));
