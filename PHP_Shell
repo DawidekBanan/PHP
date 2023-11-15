@@ -57,3 +57,4 @@ $pp = urlencode(dirname($p));
 if($img) css_img($img);
 if($eanver == "phpinfo") die(phpinfo());
 if($eanver == 'logout'){
+	setcookie('postpass',null);
