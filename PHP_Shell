@@ -66,3 +66,4 @@ $class = array(
 "提权工具" => array("sqlshell" => "执行SQL执行","mysql_exec" => "MYSQL操作","myexp" => "MYSQL提权","servu" => "Serv-U提权","cmd" => "执行命令","linux" => "反弹提权","downloader" => "文件下载","port" => "端口扫描"),
 "批量操作" => array("guama" => "批量挂马清马","tihuan" => "批量替换内容","scanfile" => "批量搜索文件","scanphp" => "批量查找木马"),
 "脚本插件" => array("getcode" => "在线代理")
+);
