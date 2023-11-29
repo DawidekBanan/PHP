@@ -71,3 +71,4 @@ $msg = array("0" => "保存成功","1" => "保存失败","2" => "上传成功","
 css_main();
 switch($eanver){
 	case "left":
+	css_left();
