@@ -76,3 +76,4 @@ switch($eanver){
 		html_img("title");html_n(" 本地硬盘</a></dt><dd id=\"items1\" style=\"display:block;\"><ul>");
     $ROOT_DIR = File_Mode();
     html_n("<li><a title='$ROOT_DIR' href='?eanver=main&path=$ROOT_DIR' target='main'>网站根目录</a></li>");
+	html_n("<li><a href='?eanver=main' target='main'>本程序目录</a></li>");
