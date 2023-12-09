@@ -81,3 +81,4 @@ switch($eanver){
     if (is_dir($drive."/")){$vol=File_Str("vol $drive");if(empty($vol))$vol=$drive;
     html_n("<li><a title='$drive' href='?eanver=main&path=$drive' target='main'>本地磁盘($drive)</a></li>");}}
 	html_n("</ul></dd></dl>");
+	$i = 2;
