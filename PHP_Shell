@@ -84,3 +84,4 @@ switch($eanver){
 	$i = 2;
 	foreach($class as $name => $array){
 		html_n("<dl><dt><a href=\"#\" onclick=\"showHide('items$i');\" target=\"_self\">");
+		html_img("title");html_n(" $name</a></dt><dd id=\"items$i\" style=\"display:block;\"><ul>");
