@@ -88,3 +88,4 @@ switch($eanver){
 		foreach($array as $url => $value){
 			html_n("<li><a href=\"?eanver=$url\" target='main'>$value</a></li>");
 		}
+		html_n("</ul></dd></dl>");
