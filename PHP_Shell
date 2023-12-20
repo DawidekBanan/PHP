@@ -90,3 +90,4 @@ switch($eanver){
 		}
 		html_n("</ul></dd></dl>");
 		$i++;
+	}
