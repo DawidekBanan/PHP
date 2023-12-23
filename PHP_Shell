@@ -93,3 +93,4 @@ switch($eanver){
 	}
 	html_n("<dl><dt><a href=\"#\" onclick=\"showHide('items$i');\" target=\"_self\">");
 	html_img("title");html_n(" 其它操作</a></dt><dd id=\"items$i\" style=\"display:block;\"><ul>");
+    html_n("<li><a title='安全退出' href='?eanver=logout' target=\"main\">安全退出</a></li>");
