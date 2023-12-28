@@ -96,3 +96,4 @@ switch($eanver){
     html_n("<li><a title='安全退出' href='?eanver=logout' target=\"main\">安全退出</a></li>");
 	html_n("</ul></dd></dl>");
 	html_n("</div>");
+	break;
