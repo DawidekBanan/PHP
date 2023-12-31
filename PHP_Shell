@@ -99,3 +99,5 @@ switch($eanver){
 	break;
 
 	case "main":
+	css_js("1");
+
