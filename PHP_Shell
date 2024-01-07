@@ -101,4 +101,5 @@ switch($eanver){
 	case "main":
 	css_js("1");
 	$dir = @dir($path);
+	$REAL_DIR = File_Str(realpath($path));
 
