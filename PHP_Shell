@@ -104,3 +104,4 @@ switch($eanver){
 	$REAL_DIR = File_Str(realpath($path));
 
 	if(!empty($_POST['actall'])){echo '<div class="actall">'.File_Act($_POST['files'],$_POST['actall'],$_POST['inver'],$REAL_DIR).'</div>';}
+	$NUM_D = $NUM_F = 0;
