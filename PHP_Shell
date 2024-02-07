@@ -107,3 +107,4 @@ switch($eanver){
 	$NUM_D = $NUM_F = 0;
 	if(!$_SERVER['SERVER_NAME']) $GETURL = ''; else $GETURL = 'http://'.$_SERVER['SERVER_NAME'].'/';
 	$ROOT_DIR = File_Mode();
+	html_n("<table width=\"100%\" border=0 bgcolor=\"#555555\"><tr><td><form method='GET'>地址:<input type='hidden' name='eanver' value='main'>");
